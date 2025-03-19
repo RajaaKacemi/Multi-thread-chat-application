@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ma.enset.multithreadchatapplication.ChatController">
+
+
+    <!-- Chat Area in the Center -->
+    <center>
+        <VBox>
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <TextArea fx:id="chatArea" editable="false" wrapText="true"/>
+        </VBox>
+
+    </center>
+
+    <!-- Input Field and Send Button at the Bottom -->
+    <bottom>
+        <HBox spacing="10">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <TextField fx:id="messageField" promptText="Type your message..." HBox.hgrow="ALWAYS"/>
+            <Button text="Send" onAction="#sendMessage"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

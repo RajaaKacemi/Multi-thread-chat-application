@@ -44,16 +44,16 @@ public class Client {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                 String msgFromGroupChat;
+                String msgFromGroupChat;
 
-                 while (socket.isConnected()) {
-                     try {
-                         msgFromGroupChat = bufferedReader.readLine();
-                         System.out.println(msgFromGroupChat);
-                     } catch (IOException e) {
-                         closeEverything(socket, bufferedReader, bufferedWriter);
-                     }
-                 }
+                while (socket.isConnected()) {
+                    try {
+                        msgFromGroupChat = bufferedReader.readLine();
+                        System.out.println(msgFromGroupChat);
+                    } catch (IOException e) {
+                        closeEverything(socket, bufferedReader, bufferedWriter);
+                    }
+                }
             }
         }).start();
     }
