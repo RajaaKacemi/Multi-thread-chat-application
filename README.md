@@ -1,5 +1,3 @@
-Here’s an improved and more detailed continuation of your README file. Let me know if you want to add anything else.
-
 ---
 
 # Group Chat Application
