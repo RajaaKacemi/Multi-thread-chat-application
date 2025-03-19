@@ -76,3 +76,13 @@ java -cp target/classes ma.enset.multithreadchatapplication.ChatApplication
 - **Sockets (TCP/IP)** – Network communication
 
 ---
+## Screenshots
+
+## 1. Login Screen
+![Alt Text](screenshots/edit.png)
+## 2. Chat Window
+![Alt Text](screenshots/chat.png)
+## 3. User Join Notification
+![Alt Text](screenshots/group-chat.png)
+## 4. User Leave Notification
+![Alt Text](screenshots/left-chat.png)
